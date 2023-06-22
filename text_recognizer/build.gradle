@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         minSdk 23
-        targetSdk 31
+        targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -38,7 +38,7 @@ dependencies {
 
     implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
 
-    implementation 'com.github.ealmaz:DesignChili:0.0.0.132'
+    implementation 'com.github.nur-rmarchenko:DesignChili_M3:9.9.9'
 
     def camerax_version = "1.0.2"
 
@@ -51,7 +51,7 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.android.material:material:1.9.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -64,7 +64,7 @@ afterEvaluate {
                 from components.release
                 groupId = "kg.nurtelecom"
                 artifactId = "text_recognizer"
-                version = "0.0.1"
+                version = "9.9.9"
             }
         }
     }
